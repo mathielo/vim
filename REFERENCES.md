@@ -4,5 +4,6 @@ This is the place to keep track of good articles about vim tweaks, usage, tips, 
 ## Vim Usage
 General, basic and/or advanced Vim usage tips.
 
+- [Welcome to Vim](https://vimeo.com/6999927) - video introduction on Vim (28 mins)
 - [Sharing Vim Tricks](http://lucumr.pocoo.org/2010/7/29/sharing-vim-tricks/) - search/replace, ways to insert, motion commands, file navigation
 - [More about Vim](https://github.com/mikeizbicki/ucr-cs100/blob/class-template/textbook/shell-scripting/vim/README.md) - tabs, multiple files, viewports, file explorer
