@@ -2,6 +2,9 @@
 " Also, better safe than sorry: http://stackoverflow.com/a/5845583/2752041
 set nocompatible
 
+" Executing Pathogen
+execute pathogen#infect()
+
 " Disable Swap files (be sure to always save your work!)
 set noswapfile
 
