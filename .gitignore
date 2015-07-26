@@ -1,3 +1,5 @@
 # OS Generated files
 .DS_Store
 
+# Vim generated files
+.netrwhist
