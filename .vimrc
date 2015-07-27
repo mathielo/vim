@@ -10,3 +10,8 @@ set noswapfile
 
 " Set line numbers
 set nu
+
+" Tab indentation
+set expandtab
+set shiftwidth=2
+set softtabstop=2
