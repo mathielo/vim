@@ -14,3 +14,4 @@ General, basic and/or advanced Vim usage tips.
 
 - [VimAwesome](http://vimawesome.com/) - directory of existent Vim plugins, quite helpful to search/discover top plugins
 - [TComment](https://github.com/tomtom/tcomment_vim) - comment toggler, adapts to file types and even embeded syntax
+- [NERDTree](http://vimawesome.com/plugin/the-nerd-tree) - filesystem explorer, really useful. Make sure you get to know it's shortcuts.

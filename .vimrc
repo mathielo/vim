@@ -15,3 +15,6 @@ set nu
 set expandtab
 set shiftwidth=2
 set softtabstop=2
+
+" <Plugin>NERDTree Keymaps
+nmap <C-kb> :NERDTreeToggle<CR>
