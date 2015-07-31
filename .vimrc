@@ -11,6 +11,9 @@ set noswapfile
 " Set line numbers
 set nu
 
+" Avoiding line wrapping
+set nowrap
+
 " Tab indentation
 set expandtab
 set shiftwidth=2
