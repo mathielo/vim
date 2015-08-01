@@ -14,10 +14,13 @@ set nu
 " Avoiding line wrapping
 set nowrap
 
-" Tab indentation
+" Indentation
 set expandtab
 set shiftwidth=2
 set softtabstop=2
+
+" Ignores case if search is all lowercase, case-sensitive otherwise
+set smartcase
 
 " <Plugin>NERDTree Keymaps
 nmap <C-kb> :NERDTreeToggle<CR>
