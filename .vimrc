@@ -18,6 +18,7 @@ set nowrap
 set expandtab
 set shiftwidth=2
 set softtabstop=2
+set autoindent
 
 " Ignores case if search is all lowercase, case-sensitive otherwise
 set smartcase
