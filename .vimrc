@@ -33,6 +33,7 @@ set undolevels=600
 
 " <Plugin>NERDTree Keymaps
 nmap <C-k><C-b> :NERDTreeToggle<CR>
+let NERDTreeQuitOnOpen=1
 
 " Setting color scheme and syntax highlight
 if &t_Co > 2 || has("gui_running")
