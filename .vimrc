@@ -24,4 +24,4 @@ set autoindent
 set smartcase
 
 " <Plugin>NERDTree Keymaps
-nmap <C-kb> :NERDTreeToggle<CR>
+nmap <C-k><C-b> :NERDTreeToggle<CR>
