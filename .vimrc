@@ -26,3 +26,7 @@ set smartcase
 
 " <Plugin>NERDTree Keymaps
 nmap <C-k><C-b> :NERDTreeToggle<CR>
+
+" Expanding undo and history actions
+set history=600
+set undolevels=600
