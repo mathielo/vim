@@ -17,6 +17,7 @@ set nowrap
 " Indentation
 set expandtab
 set shiftwidth=2
+set shiftround
 set softtabstop=2
 set autoindent
 
