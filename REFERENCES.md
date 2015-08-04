@@ -9,6 +9,7 @@ General, basic and/or advanced Vim usage tips.
 - [Sharing Vim Tricks](http://lucumr.pocoo.org/2010/7/29/sharing-vim-tricks/) - search/replace, ways to insert, motion commands, file navigation
 - [More about Vim](https://github.com/mikeizbicki/ucr-cs100/blob/class-template/textbook/shell-scripting/vim/README.md) - tabs, multiple files, viewports, file explorer
 - [Dotvim](https://github.com/astrails/dotvim#interesting) - Vim config by [astrails](https://github.com/astrails), lots of interesting ideas and useful plugins list
+- [Vim tips for intermediate users](http://ideasintosoftware.com/vim-productivity-tips/) - relative line numbers, save work on focus lost, vertical buffers
 
 ## Plugins
 
