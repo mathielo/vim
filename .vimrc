@@ -31,6 +31,9 @@ filetype plugin indent on
 set history=600
 set undolevels=600
 
+" Enables paste mode on insert (ignores formatting smarts)
+set pastetoggle=<F2>
+
 " <Plugin>NERDTree Keymaps
 nmap <C-k><C-b> :NERDTreeToggle<CR>
 let NERDTreeQuitOnOpen=1
