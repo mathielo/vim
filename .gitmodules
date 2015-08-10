@@ -4,3 +4,6 @@
 [submodule "bundle/tcomment_vim"]
 	path = bundle/tcomment_vim
 	url = git@github.com:tomtom/tcomment_vim.git
+[submodule "bundle/togglemouse"]
+	path = bundle/togglemouse
+	url = git@github.com:nvie/vim-togglemouse.git
