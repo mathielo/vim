@@ -59,3 +59,6 @@ function! NumberToggle()
 endfunc
 
 nnoremap <C-n> :call NumberToggle()<cr>
+" Automatically toggles when entering/leaving insert mode
+autocmd InsertEnter * :set number
+autocmd InsertLeave * :set relativenumber
