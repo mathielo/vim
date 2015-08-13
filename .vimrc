@@ -8,9 +8,6 @@ execute pathogen#infect()
 " Disable Swap files (be sure to always save your work!)
 set noswapfile
 
-" Set line numbers
-set nu
-
 " Avoiding line wrapping
 set nowrap
 
@@ -59,6 +56,12 @@ function! NumberToggle()
 endfunc
 
 nnoremap <C-n> :call NumberToggle()<cr>
+
+" Setting number and calling toggle upon loading. For Vim 7.4+ both work together
+" so there is no need to swtich between each.
+set number
+call NumberToggle()
+
 " Automatically toggles when entering/leaving insert mode
 autocmd InsertEnter * :set number
 autocmd InsertLeave * :set relativenumber
