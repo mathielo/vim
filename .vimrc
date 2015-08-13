@@ -39,6 +39,7 @@ nmap <C-k><C-b> :NERDTreeToggle<CR>
 let NERDTreeQuitOnOpen=1
 
 " Setting color scheme and syntax highlight
+" <http://nvie.com/posts/how-i-boosted-my-vim/#enable-syntax-highlighting>
 if &t_Co > 2 || has("gui_running")
   syntax on
   if &t_Co >= 256

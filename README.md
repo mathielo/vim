@@ -17,4 +17,10 @@ Set `~/.vimrc` to load this repository:
 
     echo 'source ~/.vim/.vimrc' > ~/.vimrc
 
+(Optional) Edit your `~/.bash_profile` (or `~/.bashrc` if you don't have it) and add the following line:
+
+    source ~/.vim/.bash_profile
+
+This will load terminal specific commands, such as color config and helpful aliases.
+
 All set, have fun! :feelsgood:
