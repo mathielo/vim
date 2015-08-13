@@ -94,3 +94,13 @@ function! LoadSession()
 endfunction
 au VimEnter * nested :call LoadSession()
 au VimLeave * :call MakeSession()
+
+" No arrow keys allowed!!! (╯°□°）╯︵ ┻━┻)
+" This is really good to enforce the use of HJKL keys for navigation.
+" You may seriously consider disabling (commenting these lines) if you're just
+" getting started with Vim. 
+" Also, try <http://vim-adventures.com> to help you get used to Vim navigation.
+map <up> <nop>
+map <down> <nop>
+map <left> <nop>
+map <right> <nop>
