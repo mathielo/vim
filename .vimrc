@@ -72,7 +72,7 @@ autocmd InsertLeave * :set relativenumber
 
 " Saves and loads current session on VimEnter and VimLeave
 " Sessions are stored at ~/.vim/sessions (ignored by Git)
-" http://vim.wikia.com/wiki/Go_away_and_come_back
+" http://stackoverflow.com/a/31978241/2752041
 function! MakeSession()
   let b:sessiondir = $HOME . "/.vim/sessions" . getcwd()
   if (filewritable(b:sessiondir) != 2)
