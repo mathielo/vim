@@ -104,3 +104,6 @@ map <up> <nop>
 map <down> <nop>
 map <left> <nop>
 map <right> <nop>
+
+" Allows you to save files that requires sudo permission after you foolishly opened it without sudo
+cmap w!! w !sudo tee % >/dev/null
