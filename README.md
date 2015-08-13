@@ -25,5 +25,7 @@ Edit your `~/.bash_profile` (or `~/.bashrc` if you don't have it) and add the fo
 
 This will load terminal specific commands, such as color config and helpful aliases.
 
+**Do not forget** to set Git's default editor to Vim: `git config --global core.editor "vim"`
+
 --
 All set, have fun! :feelsgood:
