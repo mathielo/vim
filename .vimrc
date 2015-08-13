@@ -8,6 +8,9 @@ execute pathogen#infect()
 " Disable Swap files (be sure to always save your work!)
 set noswapfile
 
+" Remapping : to ; so you can skip pressing <Shift> to enter command mode
+nnoremap ; :
+
 " Avoiding line wrapping
 set nowrap
 
