@@ -24,6 +24,7 @@ alias gl='git log'
 alias gpom='git pull origin master'
 alias gd='git diff'
 alias gbl='git branch -l'
+alias gck='git checkout'
 
 parse_git_branch() {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
