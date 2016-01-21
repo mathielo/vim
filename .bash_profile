@@ -76,6 +76,6 @@ export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
 
 # GIT COMPLETION
-if [ -f ~/.git-completion.bash ]; then
-	  . ~/.git-completion.bash
+if [ -f ~/.vim/.git-completion.bash ]; then
+	  . ~/.vim/.git-completion.bash
 fi
