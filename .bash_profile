@@ -17,6 +17,8 @@ TERM=xterm-256color
 # Directories
 alias ls='ls -lha'
 alias ..='cd ..'
+alias du='du -h'
+alias df='df -h'
 
 # Git
 alias gst='git status'
