@@ -17,8 +17,7 @@ git config --global core.editor "vim"
 
 # Adding custom user configs 
 echo 'source ~/.vim/.bash_profile' > ~/.bash_profile
-# Reloading bash configs
-source ~/.bash_profile
 
 cd ~/
 echo "All done, new config ready to use!"
+echo "Run 'source ~/.bash_profile' to reload current terminal session with new config"
