@@ -17,7 +17,7 @@ Please do note the message at the end of installation:
 
 You need to manually reload your current terminal session for changes to take effect.
 
-**NOTE:** Running the automated install will also setup the [Optional](#Optionals) configurations.
+**NOTE:** Running the automated install will also setup the [optional](#optionals) configurations.
 
 ## Manual Installation (Unix)
 
