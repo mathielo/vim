@@ -29,6 +29,10 @@ alias gds='git diff --staged'
 alias gbl='git branch -l'
 alias gck='git checkout'
 alias gi='git add -i'
+alias ga='git add'
+alias ga.='ga .'
+alias gs='git stash'
+alias gsl='gs list'
 
 parse_git_branch() {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
