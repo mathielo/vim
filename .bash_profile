@@ -14,6 +14,9 @@ TERM=xterm-256color
 ### Feel free to change/remove them at your will.
 ###
 
+# Bash
+alias rld='source ~/.bash_profile'
+
 # Directories
 alias ls='ls -lha'
 alias ..='cd ..'
@@ -31,8 +34,6 @@ alias gck='git checkout'
 alias gi='git add -i'
 alias ga='git add'
 alias ga.='ga .'
-alias gs='git stash'
-alias gsl='gs list'
 
 parse_git_branch() {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
