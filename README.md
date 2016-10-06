@@ -7,7 +7,7 @@ Some [references](./REFERENCES.md) were added to keep track of good articles abo
 
 Copy & paste the following line on the terminal and hit enter:
 
-    git clone https://github.com/mathielo/vim.git ~/.vim && cd ~/.vim && ./install.sh
+    git clone git@github.com:mathielo/vim.git ~/.vim && cd ~/.vim && ./install.sh
 
 This will clone this repository creating a `.vim` (hidden) folder under your user's home folder. Update the above line to replace the destination folder if desired.
 
