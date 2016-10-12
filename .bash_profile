@@ -34,6 +34,7 @@ alias gck='git checkout'
 alias gi='git add -i'
 alias ga='git add'
 alias ga.='ga .'
+alias gf='git fetch -p'
 
 parse_git_branch() {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
