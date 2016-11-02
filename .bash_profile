@@ -35,6 +35,8 @@ alias gi='git add -i'
 alias ga='git add'
 alias ga.='ga .'
 alias gf='git fetch -p'
+# Super lazy command: Git Update Master (GUM) - Checkout into master, update from origin, fetch -p
+alias gum='gck master && gpom && gf'
 
 parse_git_branch() {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
