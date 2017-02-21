@@ -21,3 +21,7 @@ General, basic and/or advanced Vim usage tips.
 ## Color Schemes
 
 - [Mustang](http://hcalves.deviantart.com/art/Mustang-Vim-Colorscheme-98974484)
+
+## Git
+
+- [Signing Git Tags](https://github.com/blinkmobile/docs/wiki/Process:-Signed-Git-Tags)
