@@ -5,11 +5,13 @@ Some [references](./REFERENCES.md) were added to keep track of good articles abo
 
 ## Install Zsh
 
-Mac OS:
+**Mac OS:**
 
     brew install zsh zsh-completion
 
-Debian/Ubuntu:
+:warning: When installing Zsh via homebrew it's possible to get a `chsh: /usr/local/bin/zsh: non-standard shell` when trying to set it as the default shell. If that happens you need to edit `/etc/shells` and add the full path for the homebew Zsh (as shwon in the error message) at the end of the file.
+
+**Debian/Ubuntu:**
 
     apt-get install zsh
 
