@@ -1,10 +1,10 @@
-### 
+###
 ### Zsh Config
-### 
+###
 ### https://wiki.archlinux.org/index.php/Zsh
 ### https://www.smashingmagazine.com/2015/07/become-command-line-power-user-oh-my-zsh-z/
-### 
-zstyle ':completion:*' completer _expand _complete _ignored _correct 
+###
+zstyle ':completion:*' completer _expand _complete _ignored _correct
 
 autoload -Uz compinit
 compinit
@@ -33,16 +33,16 @@ zstyle ':prezto:load' pmodule \
   'syntax-highlighting' \
   'history-substring-search'
 
-zstyle ':prezto:module:prompt' theme 'skwp'
+zstyle ':prezto:module:prompt' theme 'mathielo'
 
 # Source Prezto
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
-### 
+###
 ### 🌈
-### 
+###
 
 # Mustang theme is only loaded if the terminal emulator Vim runs in supports at least 256 colors (or if you use the GUI version of Vim).
 # Hint: If you’re using a terminal emulator that can show 256 colors, try setting TERM=xterm-256color in your terminal configuration or in your shell’s .rc file.
@@ -53,12 +53,12 @@ TERM=xterm-256color
 export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
 
-### 
+###
 ### Custom aliases
 ###
 
 # Bash
-alias rld='source ~/.zshrc'
+alias rld='source ~/.vim/.zsh/.zshrc'
 
 # Directories
 alias ..='cd ..'
@@ -84,4 +84,3 @@ alias gum='gck master && gpom && gf' # Super lazy command: Git Update Master (GU
 ###
 
 cd ~/projects
-
