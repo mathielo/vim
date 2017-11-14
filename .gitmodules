@@ -1,9 +1,16 @@
+# Zsh
+[submodule ".zsh/.zprezto"]
+  path = .zsh/.zprezto
+  url = https://github.com/sorin-ionescu/prezto.git
+  ignore = dirty
+
+# Vim
 [submodule "bundle/nerdtree"]
-	path = bundle/nerdtree
-	url = https://github.com/scrooloose/nerdtree.git
+  path = bundle/nerdtree
+  url = https://github.com/scrooloose/nerdtree.git
 [submodule "bundle/tcomment_vim"]
-	path = bundle/tcomment_vim
-	url = https://github.com/tomtom/tcomment_vim.git
+  path = bundle/tcomment_vim
+  url = https://github.com/tomtom/tcomment_vim.git
 [submodule "bundle/togglemouse"]
-	path = bundle/togglemouse
-	url = https://github.com/nvie/vim-togglemouse.git
+  path = bundle/togglemouse
+  url = https://github.com/nvie/vim-togglemouse.git

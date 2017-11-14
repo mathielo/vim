@@ -1,21 +1,27 @@
-# Vim
-My own personal repository for vim config, plugins and such. This repository will improve over time.
+# Vim / Zsh
+My own personal repository for terminal and vim config.
 
 Some [references](./REFERENCES.md) were added to keep track of good articles about vim tweaks and usage.
+
+## Install Zsh
+
+Mac OS:
+
+    brew install zsh zsh-completion
+
+Debian/Ubuntu:
+
+    apt-get install zsh
 
 ## Automated Installation (Unix)
 
 Copy & paste the following line on the terminal and hit enter:
 
-    git clone git@github.com:mathielo/vim.git ~/.vim && cd ~/.vim && ./install.sh
+    git clone https://github.com/mathielo/vim.git ~/.vim && cd ~/.vim && ./install.sh
 
-This will clone this repository creating a `.vim` (hidden) folder under your user's home folder. Update the above line to replace the destination folder if desired.
+This will clone this repository creating a `.vim` (hidden) folder under your user's home folder. Update the above line to replace the destination folder if desired. You might be prompted the sudoer password as the script sets the default shell to Zsh.
 
-Please do note the message at the end of installation:
-
-> Run 'cd ~ && . .bash_profile' to reload current terminal session with new config
-
-You need to manually reload your current terminal session for changes to take effect.
+At the end of the installation close the terminal window and open a fresh new one. 
 
 **NOTE:** Running the automated install will also setup the [optional](#optionals) configurations.
 
@@ -27,7 +33,7 @@ Clone this repo into `~/.vim`:
 
 Make sure to load all submodules:
 
-    cd ~/.vim && git submodule update --init
+    cd ~/.vim && git submodule update --init --recursive
 
 Set `~/.vimrc` to load this repository:
 
@@ -35,11 +41,17 @@ Set `~/.vimrc` to load this repository:
 
 ## Optionals
 
-Edit your `~/.bash_profile` (or `~/.bashrc` if you don't have it) and add the following line:
+Setup Zsh DOTDIR to load all predefined Zsh config:
 
-    source ~/.vim/.bash_profile
+    echo 'ZDOTDIR=$HOME/.vim/.zsh' > ~/.zshenv
 
-This will load terminal specific commands, such as color config and helpful aliases.
+Copy custom prompt theme into Prezto's modules folder
+
+    cp .zsh/prompt_mathielo_setup .zsh/.zprezto/modules/prompt/functions/
+
+Change default shell to Zsh (requrires sudoer password)
+
+    chsh -s $(which zsh)
 
 **Do not forget** to set Git's default editor to Vim: `git config --global core.editor "vim"`
 
