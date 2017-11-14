@@ -17,15 +17,11 @@ Debian/Ubuntu:
 
 Copy & paste the following line on the terminal and hit enter:
 
-    git clone git@github.com:mathielo/vim.git ~/.vim && cd ~/.vim && ./install.sh
+    git clone https://github.com/mathielo/vim.git ~/.vim && cd ~/.vim && ./install.sh
 
-This will clone this repository creating a `.vim` (hidden) folder under your user's home folder. Update the above line to replace the destination folder if desired.
+This will clone this repository creating a `.vim` (hidden) folder under your user's home folder. Update the above line to replace the destination folder if desired. You might be prompted the sudoer password as the script sets the default shell to Zsh.
 
-Please do note the message at the end of installation:
-
-> Run 'cd ~ && source ~/.vim/.zsh/.zshrc' to reload current terminal session with new config
-
-You need to manually reload your current terminal session for changes to take effect.
+At the end of the installation close the terminal window and open a fresh new one. 
 
 **NOTE:** Running the automated install will also setup the [optional](#optionals) configurations.
 
