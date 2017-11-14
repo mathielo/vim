@@ -21,7 +21,7 @@ function prompt_mathielo_setup {
   if [[ $TERM = *256color* || $TERM = *rxvt* ]]; then
     # Prompt Colors
     pmpt_clr=(
-      "%F{160}" # Red
+      "%F{001}" # Red
       "%F{208}" # Strong Orange
       "%F{214}" # Light Orange
     )

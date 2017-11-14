@@ -57,9 +57,6 @@ export LSCOLORS=ExFxCxDxBxegedabagacad
 ### Custom aliases
 ###
 
-# Bash
-alias rld='source ~/.vim/.zsh/.zshrc'
-
 # Directories
 alias ..='cd ..'
 alias du='du -h'
@@ -83,4 +80,4 @@ alias gum='gck master && gpom && gf' # Super lazy command: Git Update Master (GU
 ### Session startup
 ###
 
-cd ~/projects
+cd ~

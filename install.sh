@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "\n\n\nPerforming installation of https://github.com/mathielo/vim ..."
+echo "Performing installation of https://github.com/mathielo/vim ..."
 
 # Fetching repository submodules
 git submodule update --init --recursive
@@ -17,9 +17,9 @@ git config --global core.editor "vim"
 echo 'ZDOTDIR=$HOME/.vim/.zsh' > ~/.zshenv
 
 # Copy custom prompt theme into Prezto's modules folder
-cp .zsh/prompt_mathielo_setup .zsh/.zprezto/modules/prompt/functions/
+cp ~/.vim/.zsh/prompt_mathielo_setup ~/.vim/.zsh/.zprezto/modules/prompt/functions/
 
 # Change default shell to Zsh (requrires sudoer password)
 chsh -s $(which zsh)
 
-echo "All done! \nYou should close this terminal session and a start a fresh one :)"
+echo "All done! You should close this terminal session and a start a fresh one :)"
