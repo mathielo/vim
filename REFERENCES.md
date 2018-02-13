@@ -24,4 +24,6 @@ General, basic and/or advanced Vim usage tips.
 
 ## Git
 
+- [Import Keybase Private Key](https://www.keybits.net/post/import-keybase-private-key/)
+- [Signing commits using GPG](https://help.github.com/articles/signing-commits-using-gpg/)
 - [Signing Git Tags](https://github.com/blinkmobile/docs/wiki/Process:-Signed-Git-Tags)
