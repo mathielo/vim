@@ -1,0 +1,9 @@
+Package Control
+All Autocomplete
+Boxy Theme
+Git Gutter
+Markdown Editing
+Sidebar Enhancements
+SublimeLinter
+
+Macros can be found at `~/Library/Application Support/Sublime Text 3/Packages/User/`

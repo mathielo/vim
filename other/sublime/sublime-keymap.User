@@ -1,0 +1,5 @@
+[
+  { "keys": ["super+;"], "command": "run_macro_file", "args": {"file": "res://Packages/User/eol-semicolon.sublime-macro"} },
+  { "keys": ["ctrl+,"], "command": "run_macro_file", "args": {"file": "res://Packages/User/eol-comma.sublime-macro"} },
+]
+
