@@ -40,6 +40,10 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
+# Some overrides after Prezto has been loaded
+unsetopt CORRECT # Disables annoying correction suggestions >:(
+unalias rm gs # Disables annoying aliases
+
 ###
 ### 🌈
 ###
