@@ -3,3 +3,6 @@
 
 # Vim generated files
 .netrwhist
+
+# Zsh
+.zsh/.zcompcache
