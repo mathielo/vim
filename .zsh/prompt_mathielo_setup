@@ -59,9 +59,11 @@ function prompt_mathielo_setup {
   zstyle ':prezto:module:git:info:dirty' format " ${git_clr[3]}✗%f"
   zstyle ':prezto:module:git:info:untracked' format " %%B${git_clr[4]}?%f%%b"
 
+  zstyle ':prezto:module:git:info:remote' format "${git_clr[1]}[%f${git_clr[4]}%R%f${git_clr[1]}]%f"
+
   zstyle ':prezto:module:git:info:keys' format \
       'prompt' " ${git_clr[1]}(%f$(coalesce "%b" "%p" "%c")%s${git_clr[1]})%f" \
-      'rprompt' '%A%B%S%C%D%U%u'
+      'rprompt' '%A%B%S%C%D%U%u %R'
 
   # Define prompts.
   PROMPT="%n%f${pmpt_clr[1]}@${pmpt_clr[2]}%m%f ${pmpt_clr[3]}%~%f"'${(e)git_info[prompt]}'" ${pmpt_clr[3]}$%f "
