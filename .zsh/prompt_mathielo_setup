@@ -50,6 +50,8 @@ function prompt_mathielo_setup {
   # https://github.com/sorin-ionescu/prezto/tree/master/modules/git#theming
   zstyle ':prezto:module:git:info' verbose 'yes'
   zstyle ':prezto:module:git:info:branch' format "${git_clr[1]}%b%f"
+  zstyle ':prezto:module:git:info:position' format "${git_clr[2]}%p%f:"
+  zstyle ':prezto:module:git:info:commit' format "${git_clr[3]}%c%f"
 
   # Verbose contexts (to be displayed in the "Right Prompt")
   zstyle ':prezto:module:git:info:ahead' format " %%B${git_clr[2]}⬆ %f%%b"
@@ -62,7 +64,7 @@ function prompt_mathielo_setup {
   zstyle ':prezto:module:git:info:remote' format "${git_clr[1]}[%f${git_clr[4]}%R%f${git_clr[1]}]%f"
 
   zstyle ':prezto:module:git:info:keys' format \
-      'prompt' " ${git_clr[1]}(%f$(coalesce "%b" "%p" "%c")%s${git_clr[1]})%f" \
+      'prompt' ' ${git_clr[1]}(%f$(coalesce %b %p%c)%s${git_clr[1]})%f' \
       'rprompt' '%A%B%S%C%D%U%u %R'
 
   # Define prompts.
