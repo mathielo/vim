@@ -80,8 +80,12 @@ alias ga.='ga .'
 alias gf='git fetch -p'
 alias gum='gck master && gpom && gf' # Super lazy command: Git Update Master (GUM) - Checkout into master, update from origin, fetch -p
 
+# Docker
+alias dc='docker-compose'
+
 ###
 ### Session startup
 ###
 
-cd ~
+cd
+
