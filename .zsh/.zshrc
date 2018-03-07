@@ -68,11 +68,9 @@ alias df='df -h'
 
 # Git
 alias gst='git status'
-alias gl='git log'
 alias gpom='git pull origin master'
 alias gd='git diff'
 alias gds='git diff --staged'
-alias gbl='git branch -l'
 alias gck='git checkout'
 alias gi='git add -i'
 alias ga='git add'
