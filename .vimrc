@@ -11,9 +11,6 @@ set noswapfile
 " Remapping : to ; so you can skip pressing <Shift> to enter command mode
 nnoremap ; :
 
-" Avoiding line wrapping
-set nowrap
-
 " Indentation
 set expandtab
 set shiftwidth=2
@@ -26,6 +23,16 @@ set smartcase
 
 " Enabling indentation and plugins for specific files
 filetype plugin indent on
+
+" Open new split windows to the right/bottom
+set splitbelow
+set splitright
+
+" Skip C-W keystroke for pane navigation
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
 
 " Expanding undo and history actions
 set history=600
