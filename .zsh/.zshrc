@@ -43,6 +43,7 @@ fi
 # Some overrides after Prezto has been loaded
 unsetopt CORRECT # Disables annoying correction suggestions >:(
 unalias rm gs # Disables annoying aliases
+unalias d
 
 ###
 ### 🌈
@@ -79,6 +80,7 @@ alias gf='git fetch -p'
 alias gum='gck master && gpom && gf' # Super lazy command: Git Update Master (GUM) - Checkout into master, update from origin, fetch -p
 
 # Docker
+alias d='docker'
 alias dc='docker-compose'
 
 ###
