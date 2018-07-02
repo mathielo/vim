@@ -1,0 +1,39 @@
+[profiles/cb10477e-023d-404c-b8f2-b15202f25fda]
+foreground-color='#EEEEEEEEECEC'
+visible-name='Mathielo'
+login-shell=false
+palette=['#000000', '#EFEF29292929', '#4D9A05', '#C3A000', '#3464A3', '#754F7B', '#05979A', '#D3D6CF', '#545652', '#CCCC00000000', '#89E234', '#FBE84F', '#729ECF', '#AC7EA8', '#34E2E2', '#EDEDEB']
+badge-color-set=true
+show-scrollbar=false
+use-system-font=false
+cursor-colors-set=false
+highlight-colors-set=false
+use-theme-colors=false
+bold-color-set=false
+font='Monospace 9'
+terminal-bell='none'
+terminal-title='${username} @ ${hostname} -  ${directory}'
+background-color='#303030'
+background-transparency-percent=22
+dim-transparency-percent=12
+
+[profiles]
+list=['cb10477e-023d-404c-b8f2-b15202f25fda']
+default='cb10477e-023d-404c-b8f2-b15202f25fda'
+
+[/]
+prompt-on-close=true
+use-overlay-scrollbar=true
+sidebar-on-right=false
+terminal-title-style='small'
+window-state=132
+theme-variant='dark'
+session-name='${username}@${hostname} -  ${directory}'
+quake-hide-headerbar=true
+enable-wide-handle=false
+window-save-state=true
+control-click-titlebar=true
+terminal-title-show-when-single=false
+
+[keybindings]
+app-preferences='<Primary><Alt>s'
