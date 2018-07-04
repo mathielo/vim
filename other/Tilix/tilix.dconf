@@ -2,7 +2,7 @@
 foreground-color='#EEEEEEEEECEC'
 visible-name='Mathielo'
 login-shell=false
-palette=['#000000', '#EFEF29292929', '#4D9A05', '#C3A000', '#3464A3', '#754F7B', '#05979A', '#D3D6CF', '#545652', '#CCCC00000000', '#89E234', '#FBE84F', '#729ECF', '#AC7EA8', '#34E2E2', '#EDEDEB']
+palette=['#1E1E1E', '#CF6A4C', '#8F9D6A', '#F9EE98', '#7587A6', '#9B859D', '#AFC4DB', '#A7A7A7', '#5F5A60', '#CF6A4C', '#8F9D6A', '#F9EE98', '#7587A6', '#9B859D', '#AFC4DB', '#EDEDEB']
 badge-color-set=true
 show-scrollbar=false
 use-system-font=false
