@@ -36,4 +36,5 @@ control-click-titlebar=true
 terminal-title-show-when-single=false
 
 [keybindings]
+session-synchronize-input='<Primary><Shift><Alt>a'
 app-preferences='<Primary><Alt>s'
