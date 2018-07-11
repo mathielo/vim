@@ -87,5 +87,8 @@ alias dc='docker-compose'
 ### Session startup
 ###
 
-cd
+# Load local .zshrc file if present
+if [[ -s "${HOME}/.zshrc" ]]; then
+  source "${HOME}/.zshrc"
+fi
 
