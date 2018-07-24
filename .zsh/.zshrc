@@ -78,6 +78,7 @@ alias ga='git add'
 alias ga.='ga .'
 alias gf='git fetch -p'
 alias gum='gck master && gpom && gf' # Super lazy command: Git Update Master (GUM) - Checkout into master, update from origin, fetch -p
+alias glss='git log --show-signature'
 
 # Docker
 alias d='docker'
