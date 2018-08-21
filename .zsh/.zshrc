@@ -83,6 +83,9 @@ alias glss='git log --show-signature'
 # Docker
 alias d='docker'
 alias dc='docker-compose'
+# Docker stats - formatted with the most common essential colulmns (so it fits a smaller terminal pane)
+# https://docs.docker.com/engine/reference/commandline/stats/#formatting
+alias dstats='docker stats --format "table {{.Container}}\t{{.Name}}\t{{.CPUPerc}}\t{{.MemUsage}}"'
 
 ###
 ### Session startup
