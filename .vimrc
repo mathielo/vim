@@ -42,7 +42,8 @@ set undolevels=600
 set pastetoggle=<F2>
 
 " <Plugin>NERDTree Keymaps
-nmap <C-k><C-b> :NERDTreeToggle<CR>
+nmap <C-k><C-l> :NERDTreeToggle<CR>
+nmap <C-l><C-k> :NERDTreeToggle<CR>
 let NERDTreeQuitOnOpen=1
 
 " Setting color scheme and syntax highlight
