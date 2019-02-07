@@ -74,11 +74,16 @@ alias gd='git diff'
 alias gds='git diff --staged'
 alias gck='git checkout'
 alias gi='git add -i'
+alias gs='git show'
 alias ga='git add'
 alias ga.='ga .'
 alias gf='git fetch -p'
 alias gum='gck master && gpom && gf' # Super lazy command: Git Update Master (GUM) - Checkout into master, update from origin, fetch -p
 alias glss='git log --show-signature'
+# Use with CAUTION! It deletes all local branchs except master
+alias gdeleteallbutmaster='gbl && sleep 3 && git branch | grep -v "master" | xargs git branch -D'
+# Deletes ALL untracked files in the repo, except for .idea folder
+alias gclean='g clean -Xfd -e \!.idea'
 
 # Docker
 alias d='docker'
