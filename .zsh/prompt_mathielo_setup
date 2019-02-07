@@ -68,7 +68,7 @@ function prompt_mathielo_setup {
       'rprompt' '%A%B%S%C%D%U%u %R'
 
   # Define prompts.
-  PROMPT="%n%f${pmpt_clr[1]}@${pmpt_clr[2]}%m%f ${pmpt_clr[3]}%~%f"'${(e)git_info[prompt]}'" ${pmpt_clr[3]}$%f "
+  PROMPT="%n%f${pmpt_clr[1]}@${pmpt_clr[2]}%m%f ${pmpt_clr[3]}$(prompt-pwd)%f"'${(e)git_info[prompt]}'" ${pmpt_clr[3]}$%f "
   RPROMPT='${git_info[rprompt]}'
 }
 
