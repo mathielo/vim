@@ -93,6 +93,24 @@ alias dc='docker-compose'
 alias dstats='docker stats --format "table {{.Container}}\t{{.Name}}\t{{.CPUPerc}}\t{{.MemUsage}}"'
 
 ###
+### Custom functions
+###
+
+# Display all to-dos recursively in the current folder/project
+# @see https://mattprice.me/2014/printing-todo-comments-with-ack/
+# @see https://beyondgrep.com/install/
+todo() {
+  ack -i \
+    -o \
+    --group \
+    --color \
+    --sort-files "\b(TODO|FIX(ME)?|OPTIMIZE|BUG)(\(\w+\))?: (.*)" \
+    --ignore-dir={.git,node_modules,vendor,Pods} \
+    | perl -pe "s/:/\t/" \
+    | perl -pe "s/\t(\w+)(\(\w+\))?:(.*)/\t\$1:\$3 \$2/"
+}
+
+###
 ### Session startup
 ###
 
