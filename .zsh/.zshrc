@@ -81,8 +81,8 @@ alias gf='git fetch -p'
 alias gum='gck main && gpom && gf' # Super lazy command: Git Update main (GUM) - Checkout into main, update from origin, fetch -p
 alias gus='gck staging && g pull origin staging && gf' # Super lazy command: Git Update staging (GUS) - Checkout into staging, update from origin, fetch -p
 alias glss='git log --show-signature'
-# Use with CAUTION! It deletes all local branchs except main
-alias gdeleteallbutmain='gbl && sleep 3 && git branch | grep -v "main" | xargs git branch -D'
+# Use with CAUTION! It deletes all local branchs except main, master and staging
+alias gdeleteallbutmain='gbl && sleep 3 && git branch | grep -Ev "(main|master|staging)" | xargs git branch -D'
 # Deletes ALL untracked files in the repo, except for .idea folder
 alias gclean='g clean -Xfd -e \!.idea'
 
