@@ -84,7 +84,7 @@ alias glss='git log --show-signature'
 # Use with CAUTION! It deletes all local branchs except main, master and staging
 alias gdeleteallbutmain='gbl && sleep 3 && git branch | grep -Ev "(main|master|staging)" | xargs git branch -D'
 # Deletes ALL untracked files in the repo, except for .idea folder
-alias gclean='g clean -Xfd -e \!.idea'
+alias gclean='g clean -Xfdi -e \!".env*"'
 
 # Docker
 alias d='docker'
