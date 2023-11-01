@@ -72,7 +72,7 @@ alias gst='git status'
 alias gpom='git pull origin main'
 alias gd='git diff'
 alias gds='git diff --staged'
-alias gck='git checkout'
+alias gbs='git switch'
 alias gi='git add -i'
 alias gs='git show'
 alias ga='git add'
@@ -82,7 +82,7 @@ alias gum='gck main && gpom && gf' # Super lazy command: Git Update main (GUM) -
 alias gus='gck staging && g pull origin staging && gf' # Super lazy command: Git Update staging (GUS) - Checkout into staging, update from origin, fetch -p
 alias glss='git log --show-signature'
 # Use with CAUTION! It deletes all local branchs except main, master and staging
-alias gdeleteallbutmain='gbl && sleep 3 && git branch | grep -Ev "(main|master|staging)" | xargs git branch -D'
+alias gpurge='gbl && sleep 3 && git branch | grep -Ev "(main)" | xargs git branch -D'
 # Deletes ALL untracked files in the repo, except for .idea folder
 alias gclean='g clean -Xfdi -e \!".env*"'
 
@@ -92,6 +92,15 @@ alias dc='docker-compose'
 # Docker stats - formatted with the most common essential colulmns (so it fits a smaller terminal pane)
 # https://docs.docker.com/engine/reference/commandline/stats/#formatting
 alias dstats='docker stats --format "table {{.Container}}\t{{.Name}}\t{{.CPUPerc}}\t{{.MemUsage}}"'
+
+# Kubernetes
+alias k='kubectl'
+
+kns() {
+  export K8S_NAMESPACE=$1
+}
+
+alias kn='k -n $K8S_NAMESPACE'
 
 ###
 ### Custom functions

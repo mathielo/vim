@@ -28,6 +28,6 @@ echo 'ZDOTDIR=$HOME/.vim/.zsh' > ~/.zshenv
 cp ~/.vim/.zsh/prompt_mathielo_setup ~/.vim/.zsh/.zprezto/modules/prompt/functions/
 
 # Change default shell to Zsh (requrires sudoer password)
-chsh -s $(which zsh)
+chsh -s "$(which zsh)"
 
 echo "All done! You should close this terminal session and a start a fresh one :)"
