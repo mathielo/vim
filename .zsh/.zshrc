@@ -78,8 +78,8 @@ alias gs='git show'
 alias ga='git add'
 alias ga.='ga .'
 alias gf='git fetch -p'
-alias gum='gck main && gpom && gf' # Super lazy command: Git Update main (GUM) - Checkout into main, update from origin, fetch -p
-alias gus='gck staging && g pull origin staging && gf' # Super lazy command: Git Update staging (GUS) - Checkout into staging, update from origin, fetch -p
+alias gum='gbs main && gpom && gf' # Super lazy command: Git Update main (GUM) - Checkout into main, update from origin, fetch -p
+alias gus='gbs staging && g pull origin staging && gf' # Super lazy command: Git Update staging (GUS) - Checkout into staging, update from origin, fetch -p
 alias glss='git log --show-signature'
 # Use with CAUTION! It deletes all local branchs except main, master and staging
 alias gpurge='gbl && sleep 3 && git branch | grep -Ev "(main)" | xargs git branch -D'
