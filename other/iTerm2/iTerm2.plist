@@ -43,6 +43,7 @@
       "Sync Title" : false,
       "Disable Window Resizing" : true,
       "Description" : "Default",
+      "Custom Locale" : "en_GB.UTF-8",
       "Close Sessions On End" : true,
       "Jobs to Ignore" : [
         "rlogin",
@@ -432,7 +433,7 @@
         "Red Component" : 1,
         "Blue Component" : 0.99215690000000001
       },
-      "Set Local Environment Vars" : true
+      "Set Local Environment Vars" : 2
     }
   ]
 }
