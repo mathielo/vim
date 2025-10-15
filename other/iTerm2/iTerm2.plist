@@ -39,7 +39,7 @@
         "Red Component" : 0.58823530000000002,
         "Blue Component" : 0.99607840000000003
       },
-      "Non-ASCII Anti Aliased" : false,
+      "Non-ASCII Anti Aliased" : true,
       "Sync Title" : false,
       "Disable Window Resizing" : true,
       "Description" : "Default",
@@ -311,7 +311,7 @@
       },
       "Background Image Is Tiled" : false,
       "Send Code When Idle" : false,
-      "ASCII Anti Aliased" : false,
+      "ASCII Anti Aliased" : true,
       "Tags" : [
         "Git Synced"
       ],
@@ -384,7 +384,7 @@
       },
       "Cursor Type" : 1,
       "Blur" : true,
-      "Normal Font" : "Monaco 12",
+      "Normal Font" : "MesloLGS-NF-Regular 13",
       "Vertical Spacing" : 1,
       "Disable Printing" : false,
       "Ansi 7 Color" : {
@@ -419,7 +419,7 @@
       "Bound Hosts" : [
 
       ],
-      "Non Ascii Font" : "Monaco 12",
+      "Non Ascii Font" : "MesloLGS-NF-Regular 13",
       "Ansi 13 Color" : {
         "Green Component" : 0.61330589999999996,
         "Red Component" : 1,

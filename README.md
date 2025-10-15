@@ -15,6 +15,10 @@ Some [references](./REFERENCES.md) were added to keep track of good articles abo
 
     apt-get install zsh
 
+## Install required fonts
+
+See [the instructions](https://github.com/romkatv/powerlevel10k#fonts) in Powerlevel10k repo to install the required **Meslo Nerd Font** pack.
+
 ## Automated Installation (Unix)
 
 Copy & paste the following line on the terminal and hit enter:
@@ -23,7 +27,7 @@ Copy & paste the following line on the terminal and hit enter:
 
 This will clone this repository creating a `.vim` (hidden) folder under your user's home folder. Update the above line to replace the destination folder if desired. You might be prompted the sudoer password as the script sets the default shell to Zsh.
 
-At the end of the installation close the terminal window and open a fresh new one. 
+At the end of the installation close the terminal window and open a fresh new one.
 
 **NOTE:** Running the automated install will also setup the [optional](#optionals) configurations.
 
