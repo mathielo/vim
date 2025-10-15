@@ -76,7 +76,9 @@ alias ..='cd ..'
 alias du='du -h'
 alias df='df -h'
 
-# Git
+###
+### Git aliases
+###
 alias gst='git status'
 alias gpom='git pull origin main'
 alias gd='git diff'
@@ -95,39 +97,16 @@ alias gpurge='gbl && sleep 3 && git branch | grep -Ev "(main)" | xargs git branc
 # Deletes ALL untracked files in the repo, except for .idea folder
 alias gclean='g clean -Xfdi -e \!".env*"'
 
-# Docker
+###
+### Docker + Kubernetes
+###
 alias d='docker'
 alias dc='docker-compose'
-# Docker stats - formatted with the most common essential colulmns (so it fits a smaller terminal pane)
-# https://docs.docker.com/engine/reference/commandline/stats/#formatting
-alias dstats='docker stats --format "table {{.Container}}\t{{.Name}}\t{{.CPUPerc}}\t{{.MemUsage}}"'
-
-# Kubernetes
 alias k='kubectl'
-
 kns() {
   export K8S_NAMESPACE=$1
 }
-
 alias kn='k -n $K8S_NAMESPACE'
-
-###
-### Custom functions
-###
-
-# Display all to-dos recursively in the current folder/project
-# @see https://mattprice.me/2014/printing-todo-comments-with-ack/
-# @see https://beyondgrep.com/install/
-todo() {
-  ack -i \
-    -o \
-    --group \
-    --color \
-    --sort-files "\b(TODO|FIX(ME)?|OPTIMIZE|BUG)(\(\w+\))?: (.*)" \
-    --ignore-dir={.git,node_modules,vendor,Pods} \
-    | perl -pe "s/:/\t/" \
-    | perl -pe "s/\t(\w+)(\(\w+\))?:(.*)/\t\$1:\$3 \$2/"
-}
 
 ###
 ### Session startup
