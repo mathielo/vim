@@ -1,3 +1,10 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.vim/.zsh/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
 ###
 ### Zsh Config
 ###
@@ -33,7 +40,9 @@ zstyle ':prezto:load' pmodule \
   'syntax-highlighting' \
   'history-substring-search'
 
-zstyle ':prezto:module:prompt' theme 'mathielo'
+# Disable custom prompt, use p10k instead
+# zstyle ':prezto:module:prompt' theme 'mathielo'
+zstyle :prezto:module:prompt theme powerlevel10k
 
 # Source Prezto
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
@@ -129,3 +138,5 @@ if [[ -s "${HOME}/.zshrc" ]]; then
   source "${HOME}/.zshrc"
 fi
 
+# To customize prompt, run `p10k configure` or edit ~/.vim/.zsh/.p10k.zsh.
+[[ ! -f ~/.vim/.zsh/.p10k.zsh ]] || source ~/.vim/.zsh/.p10k.zsh
