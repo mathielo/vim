@@ -101,7 +101,7 @@ alias gclean='g clean -Xfdi -e \!".env*"'
 ### Docker + Kubernetes
 ###
 alias d='docker'
-alias dc='docker-compose'
+alias dc='docker compose'
 alias k='kubectl'
 kns() {
   export K8S_NAMESPACE=$1
